@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registro</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-        <link rel="icon" href="img/logito.png">
+    <link rel="stylesheet" href="loginm/css/estilosL.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="img/logito.png">
 </head>
 
 <body class="hidden">
     <div class="centrado" id="onload">
-        <div class="lds-facebook"><div></div><div></div><div></div></div>
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <header>
         <nav id="nav" class="nav1">
@@ -22,19 +27,110 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="enlaces" id="enlaces">
-                    <a href="index.html"> <class="btn-header">Inicio</a>
+                    <a href="index.html">
+                        <class="btn-header">Inicio</a>
                     <a href="#" id="enlace-equipo" class="btn-header">Categorias</a>
                     <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
                     <a href="#" id="enlace-trabajo" class="btn-header">Productos</a>
                     <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
-                    <a href="login.html"> <class="btn-header">Ingreso</a>
-                    <a href="registro.html"> <class="btn-header">Registro</a>
+                    <a href="login.html">
+                        <class="btn-header">Ingreso</a>
+                    <a href="registro.html">
+                        <class="btn-header">Registro</a>
                 </div>
                 <div class="icono" id="open">
                     <span>&#9776;</span>
                 </div>
-                
+
+
+
             </div>
+
+            <body>
+                <main>
+                    <form action="" class="formulario" id="formulario">
+                        <!-- Grupo: Usuario -->
+                        <div class="formulario__grupo" id="grupo__usuario">
+                            <label for="usuario" class="formulario__label">Usuario</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+
+                        <!-- Grupo: Nombre -->
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                            <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+
+                        <!-- Grupo: Contraseña 2 -->
+                        <div class="formulario__grupo" id="grupo__password2">
+                            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password2" id="password2">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                        </div>
+
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+
+                        <!-- Grupo: Teléfono -->
+                        <div class="formulario__grupo" id="grupo__telefono">
+                            <label for="telefono" class="formulario__label">Teléfono</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                        </div>
+
+                        <!-- Grupo: Terminos y Condiciones -->
+                        <div class="formulario__grupo" id="grupo__terminos">
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                            </label>
+                        </div>
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+                    </form>
+                </main>
+
+                <script src="js/formulario.js"></script>
+                <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+            </body>
             <div>
         </nav>
     </header>
@@ -52,17 +148,20 @@
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-whatsapp"></i>
                 <i class="fa-solid fa-envelope"></i>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+                />
+
 
             </div>
             <p class="contactof">Contactenos por alguna de nuestras redes sociales</p>
         </div>
 
     </footer>
-    
+
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
+    <script src="loginm/js/formulario.js"></script>
 </body>
+
 </html>
