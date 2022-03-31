@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background: #E5E5E5;
+    flex-wrap: wrap;
 }
 
 main {
     max-width: 800px;
     width: 90%;
     margin: auto;
-    padding: 20px;
 }
 
 .formulario {
@@ -166,6 +168,33 @@ main {
         grid-column: 1;
     }
     .formulario__btn {
+        display: inline;
         width: 100%;
     }
+}
+
+
+/* Conten */
+
+.contenedorR {
+    width: 800px;
+    height: 450px;
+    text-align: justify;
+    margin: 50px auto;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+
+/* Definimos el ancho del Scroll */
+
+.contenedorR::-webkit-scrollbar {
+    width: 22px;
+}
+
+
+/* Definimos el color para el componente Thumb */
+
+.contenedorR::-webkit-scrollbar-thumb:hover {
+    box-shadow: transparent;
 }
