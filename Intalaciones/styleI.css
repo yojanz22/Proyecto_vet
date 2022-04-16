@@ -270,9 +270,3 @@ body {
 .spinner--right [data-type="peru"] .content__left {
     background-image: none;
 }
-
-img {
-    display: block;
-    margin: 0px auto;
-    position: left;
-}

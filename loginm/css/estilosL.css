@@ -177,6 +177,7 @@
         margin: 50px auto;
         overflow-y: auto;
         flex-wrap: wrap;
+        font-size: 20px;
     }
     /* Definimos el ancho del Scroll */
     
@@ -187,8 +188,4 @@
     
     .contenedorR::-webkit-scrollbar-thumb:hover {
         box-shadow: transparent;
-    }
-    
-    .parent {
-        text-align: center;
     }
