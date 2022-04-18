@@ -23,7 +23,6 @@
     }
     
     .formulario__label {
-        display: block;
         font-weight: 700;
         padding: -20px;
         cursor: pointer;
