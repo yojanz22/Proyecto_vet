@@ -1,6 +1,5 @@
     * {
         box-sizing: border-box;
-        position: relative;
     }
     
     body {
@@ -23,7 +22,7 @@
     
     .formulario__label {
         font-weight: 700;
-        padding: -20px;
+        padding: 20px;
         cursor: pointer;
         font-size: 20px;
     }
@@ -152,7 +151,7 @@
     }
     /* ----- -----  Mediaqueries ----- ----- */
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         .formulario {
             grid-template-columns: 1fr;
         }
@@ -169,6 +168,7 @@
     /* Conten */
     
     .contenedorR {
+        position: relative;
         width: auto;
         height: auto;
         text-align: justify;
@@ -181,9 +181,4 @@
     
     .contenedorR::-webkit-scrollbar {
         width: 22px;
-    }
-    /* Definimos el color para el componente Thumb */
-    
-    .contenedorR::-webkit-scrollbar-thumb:hover {
-        box-shadow: transparent;
     }

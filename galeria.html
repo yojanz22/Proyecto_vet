@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="icon" href="img/logito.png">
     <link rel="stylesheet" href="efectos/style.css">
+    <link rel="stylesheet" href="galeria/style.css">
 
 </head>
 
@@ -32,9 +33,10 @@
                 <div class="enlaces" id="enlaces">
                     <a href="index.html">
                         <class="btn-header">Inicio</a>
-                    <a href="galeria.html" title="Mi enlace">Galeria</a>
                     <a href="contacto.html">
                         <class="btn-header">Contacto</a>
+                    <a href="login.html">
+                        <class="btn-header">Ingreso</a>
                     <a href="registro.html">
                         <class="btn-header">Registro</a>
                 </div>
@@ -46,34 +48,11 @@
 
             <body>
                 <main>
-                    <form action="" class="formulario" id="formulario">
-                        <!-- Grupo: Usuario -->
-                        <div class="formulario__grupo" id="grupo__usuario">
-                            <label for="usuario" class="formulario__label">Usuario</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                            </div>
-                        </div>
 
-                        <!-- Grupo: Contraseña -->
-                        <div class="formulario__grupo" id="grupo__password">
-                            <label for="password" class="formulario__label">Contraseña</label>
-                            <div class="formulario__grupo-input">
-                                <input type="password" class="formulario__input" name="password" id="password">
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                            </div>
-                        </div>
-                        <div class="formulario__mensaje" id="formulario__mensaje">
-                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                        </div>
-                        <div class="formulario__grupo formulario__grupo-btn-enviar">
-                            <button type="submit" class="formulario__btn">Enviar</button>
-                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                        </div>
+
                 </main>
 
-                <!-- partial -->
+                <script src="galeria/scripy.js"></script>
             </body>
         </nav>
     </header>
@@ -103,7 +82,7 @@
         <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
         <script src="js/filtro.js"></script>
-        <script src="loginm/js/formulario.js"></script>
+
 
 </body>
 

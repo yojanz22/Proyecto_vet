@@ -39,7 +39,6 @@ function apertura() {
 window.addEventListener('load', function() {
     $('#onload').fadeOut();
     $('body').removeClass('hidden');
-    menus();
 });
 window.addEventListener('click', function(e) {
     console.log(e.target);
@@ -54,7 +53,6 @@ window.addEventListener('click', function(e) {
 });
 window.addEventListener('scroll', function() {
     console.log(window.pageYOffset);
-    menus();
 });
 window.addEventListener('resize', function() {
     if (screen.width >= 700) {
